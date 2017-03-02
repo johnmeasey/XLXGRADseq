@@ -257,3 +257,61 @@ cat XGL713_232a.fq XGL713_232b.fq XGL713_232c.fq XGL713_232d.fq > concat/XGL713_
 cat XM_1a.fq XM_1b.fq XM_1c.fq XM_1d.fq > concat/XM_1.fq
 ```
 
+# Align the fq files using bwa mem and sort them too
+
+```
+#!/bin/bash                                                                                            
+
+path_to_data="samples/concat"
+path_to_chromosome="/net/infofile4-inside/volume1/scratch/ben/2017_XL_XG_RADseq/XL_v9.1/"
+chromosome="Xla.v91.repeatMasked"
+
+individuals="XL_CPT1
+XL_CPT2
+XL_CPT3
+XL_CPT4
+XGUAE_59
+XGUAE_65
+XGUAE_97
+XGUAE_93
+XGUAE_92
+XGUAE_72
+XGUAE_70
+XGUAE_71
+XGUAE_43
+XGUAE_42
+XGUAE_44
+XGUAE_36
+XG12_07
+XG153
+XG92
+XGL713_177
+XGL713_123
+XGL713_179
+XGL713_180
+XGL713_181
+XGUAE_124
+XLJONK_14
+BJE3639
+BJE3545
+XGL713_232
+XM_1
+BJE1488
+BJE1489
+BJE261
+BJE263
+BJE264
+BJE265
+BJE266
+BJE267"
+
+for each_individual in $individuals
+do
+
+echo ${each_individual}
+    bwa mem -M -t 16 -r "@RG\tID:FLOWCELL1.LANE6\tSM:${each_individual}\tPL:illumina" $path_to_chromosome/$chromosome.fa $path_to_data/${each_individual}.fq | samtools view -bSh - > $path_to_data/${each_individual}.bam
+    samtools sort $path_to_data/${each_individual}.bam $path_to_data/${each_individual}_sorted
+    samtools index $path_to_data/${each_individual}_sorted.bam
+done
+
+```
