@@ -318,4 +318,10 @@ done
 
 # Make a merged bam file
 
-`samtools merge XLXGXM_merged_sorted.bam *_sorted.bam`
+`samtools merge XLXVXGXM_merged_sorted.bam *_sorted.bam`
+
+# index the bam file
+
+`samtools index XLXVXGXM_merged_sorted.bam`
+
+`~/samtools_2016/bin/samtools mpileup -d8000 -ugf /net/infofile4-inside/volume1/scratch/ben/2017_XL_XG_RADseq/XL_v9.1/Xla.v91.repeatMasked.fa -t DP,AD XLXVXGXM_merged_sorted.bam | ~/samtools_2016/bcftools-1.3.1/bcftools call -V indels --format-fields GQ -m -O z | ~/samtools_2016/bcftools-1.3.1/bcftools filter -e 'FORMAT/GT = "." || FORMAT/DP < 10 || FORMAT/GQ < 20 || FORMAT/GQ = "."' -O z -o XLXVXGXM_merged_sorted.bam.vcf.gz`
