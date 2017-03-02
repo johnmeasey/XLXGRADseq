@@ -315,3 +315,7 @@ echo ${each_individual}
 done
 
 ```
+
+# Make a merged bam file
+
+`samtools merge XLXGXM_merged_sorted.bam *_sorted.bam`
