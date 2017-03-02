@@ -125,101 +125,135 @@ and now make a dict file:
 
 # rename the demultiplexed files
 ```
-mv sample_TCCGGAGCGC.fq XL_CPT1.fq
-mv sample_CTAACACGGC.fq XL_CPT1.fq
-mv sample_AGCTTCGATT.fq XL_CPT1.fq
-mv sample_TCGCCGCAAT.fq XL_CTP2.fq
-mv sample_TCAGTTCCGG.fq XL_CPT2.fq
-mv sample_CGGAAGTGAG.fq XL_CPT2.fq
-mv sample_GTTGCTAGAC.fq XL_CPT3.fq
-mv sample_AATAGATTCA.fq XL_CPT3.fq
-mv sample_AGCTGATACA.fq XL_CPT3.fq
-mv sample_ATCAGTAGAA.fq XL_CPT4.fq
-mv sample_TCGTCTTAGT.fq XL_CPT4.fq
-mv sample_GCTCAGCCAG.fq XL_CPT4.fq
-mv sample_CGGCTACTTC.fq XGUAE_59.fq
-mv sample_CAAGCCGGTT.fq XGUAE_59.fq
-mv sample_TTGCGCAAGC.fq XGUAE_59.fq
-mv sample_TACGATGGAG.fq XGUAE_65.fq
-mv sample_GCAATATACA.fq XGUAE_65.fq
-mv sample_AAGAATTCGG.fq XGUAE_65.fq
-mv sample_TCGGCAGTCG.fq XGUAE_97.fq
-mv sample_AGTTCCATTG.fq XGUAE_97.fq
-mv sample_TTCTTGCGCT.fq XGUAE_97.fq
-mv sample_AGCAATCTAA.fq XGUAE_93.fq
-mv sample_GAATTGTCGC.fq XGUAE_93.fq
-mv sample_CTTCGACATA.fq XGUAE_93.fq
-mv sample_GAGATATGGT.fq XGUAE_92.fq
-mv sample_CTCCTTGGAG.fq XGUAE_92.fq
-mv sample_GTGTCTCTTG.fq XGUAE_92.fq
-mv sample_TGCAGTTATC.fq XGUAE_72.fq
-mv sample_TTCTGGAATA.fq XGUAE_72.fq
-mv sample_ACGCAACACA.fq XGUAE_72.fq
-mv sample_ACTGCCTCAA.fq XGUAE_70.fq
-mv sample_ACATCAATAT.fq XGUAE_70.fq
-mv sample_CCTCTTATCA.fq XGUAE_70.fq
-mv sample_TATCGTTAGT.fq XGUAE_71.fq
-mv sample_TAGTGCGGTC.fq XGUAE_71.fq
-mv sample_GGCCGGTAAC.fq XGUAE_71.fq
-mv sample_AGGAACCTCG.fq XGUAE_43.fq
-mv sample_TTATCCGTAG.fq XGUAE_43.fq
-mv sample_CGCTATACGG.fq XGUAE_43.fq
-mv sample_CACGCAACGA.fq XGUAE_42.fq
-mv sample_TGTCCTAGGA.fq XGUAE_42.fq
-mv sample_ATCCGTCTAC.fq XGUAE_42.fq
-mv sample_GGACTCACGG.fq XGUAE_44.fq
-mv sample_GCGTCCTGCC.fq XGUAE_44.fq
-mv sample_ACTTGACCGG.fq XGUAE_44.fq
-mv sample_AATGGTGACT.fq XGUAE_36.fq
-mv sample_CTAACAGTAT.fq XGUAE_36.fq
-mv sample_TCATAGGCTA.fq XGUAE_36.fq
-mv sample_GCTGCACGGT.fq XG12_07.fq
-mv sample_GCCGCAATGC.fq XG12_07.fq
-mv sample_CGCTTCTCTG.fq XG12_07.fq
-mv sample_CTCATTAACC.fq XG153.fq
-mv sample_TTGATGGTGC.fq XG153.fq
-mv sample_CAACATGAAG.fq XG153.fq
-mv sample_ATGAAGGCAG.fq XG92.fq
-mv sample_GATGGACTAA.fq XG92.fq
-mv sample_GCATGGAGGT.fq XG92.fq
-mv sample_GTATATCCAC.fq XGL713_177.fq
-mv sample_CGTACCTTGC.fq XGL713_177.fq
-mv sample_TATCGCGGAG.fq XGL713_177.fq
-mv sample_CATGCATACT.fq XGL713_123.fq
-mv sample_TCACTGAGAA.fq XGL713_123.fq
-mv sample_ATCCATAAGA.fq XGL713_123.fq
-mv sample_CTGTTAGATT.fq XGL713_123.fq
-mv sample_TAACTGGTAC.fq XGL713_179.fq
-mv sample_GCCGGTGATT.fq XGL713_179.fq
-mv sample_AGACGAATAG.fq XGL713_179.fq
-mv sample_GGTCATTGTA.fq XGL713_180.fq
-mv sample_CGGTCGTTAC.fq XGL713_180.fq
-mv sample_GACGGACAGG.fq XGL713_180.fq
-mv sample_ATTGCCACCG.fq XGL713_180.fq
-mv sample_CAGAACCAGC.fq XGL713_181.fq
-mv sample_GCTGTGCAGA.fq XGL713_181.fq
-mv sample_AAGACCAATC.fq XGL713_181.fq
-mv sample_CGCGCGGCTG.fq XGUAE_124.fq
-mv sample_GCATGAGGCG.fq XGUAE_124.fq
-mv sample_TGACGGTGAT.fq XGUAE_124.fq
-mv sample_CTTACCGGAG.fq XLJONK_14.fq
-mv sample_ACACACATCA.fq XLJONK_14.fq
-mv sample_TGTTGTCCGC.fq XLJONK_14.fq
-mv sample_ATCCGCGACG.fq XLJONK_14.fq
-mv sample_AAGTCGAGTA.fq BJE3639.fq
-mv sample_CCAATCAAGA.fq BJE3639.fq
-mv sample_TGAGCCAGCT.fq BJE3639.fq
-mv sample_TCTAGAGAAG.fq BJE3545.fq
-mv sample_GCCGAGGTGA.fq BJE3545.fq
-mv sample_GGTGAGTCGG.fq BJE3545.fq
-mv sample_CTTATTCTAC.fq XGL713_232.fq
-mv sample_CAAGAGACGT.fq XGL713_232.fq
-mv sample_GCACGTCTCC.fq XGL713_232.fq
-mv sample_GTGCTCTCTA.fq XGL713_232.fq
-mv sample_GCGTCAGATG.fq XM_1.fq
-mv sample_AATGAATCAG.fq XM_1.fq
-mv sample_ATTAGGAGGC.fq XM_1.fq
-mv sample_TTCTTCAGAC.fq XM_1.fq
-```
+mv sample_TCCGGAGCGC.fq XL_CPT1a.fq
+mv sample_CTAACACGGC.fq XL_CPT1b.fq
+mv sample_AGCTTCGATT.fq XL_CPT1c.fq
+mv sample_TCGCCGCAAT.fq XL_CTP2a.fq
+mv sample_TCAGTTCCGG.fq XL_CPT2b.fq
+mv sample_CGGAAGTGAG.fq XL_CPT2c.fq
+mv sample_GTTGCTAGAC.fq XL_CPT3a.fq
+mv sample_AATAGATTCA.fq XL_CPT3b.fq
+mv sample_AGCTGATACA.fq XL_CPT3c.fq
+mv sample_ATCAGTAGAA.fq XL_CPT4a.fq
+mv sample_TCGTCTTAGT.fq XL_CPT4b.fq
+mv sample_GCTCAGCCAG.fq XL_CPT4c.fq
+mv sample_CGGCTACTTC.fq XGUAE_59a.fq
+mv sample_CAAGCCGGTT.fq XGUAE_59b.fq
+mv sample_TTGCGCAAGC.fq XGUAE_59c.fq
+mv sample_TACGATGGAG.fq XGUAE_65a.fq
+mv sample_GCAATATACA.fq XGUAE_65b.fq
+mv sample_AAGAATTCGG.fq XGUAE_65c.fq
+mv sample_TCGGCAGTCG.fq XGUAE_97a.fq
+mv sample_AGTTCCATTG.fq XGUAE_97b.fq
+mv sample_TTCTTGCGCT.fq XGUAE_97c.fq
+mv sample_AGCAATCTAA.fq XGUAE_93a.fq
+mv sample_GAATTGTCGC.fq XGUAE_93b.fq
+mv sample_CTTCGACATA.fq XGUAE_93c.fq
+mv sample_GAGATATGGT.fq XGUAE_92a.fq
+mv sample_CTCCTTGGAG.fq XGUAE_92b.fq
+mv sample_GTGTCTCTTG.fq XGUAE_92c.fq
+mv sample_TGCAGTTATC.fq XGUAE_72a.fq
+mv sample_TTCTGGAATA.fq XGUAE_72b.fq
+mv sample_ACGCAACACA.fq XGUAE_72c.fq
+mv sample_ACTGCCTCAA.fq XGUAE_70a.fq
+mv sample_ACATCAATAT.fq XGUAE_70b.fq
+mv sample_CCTCTTATCA.fq XGUAE_70c.fq
+mv sample_TATCGTTAGT.fq XGUAE_71a.fq
+mv sample_TAGTGCGGTC.fq XGUAE_71b.fq
+mv sample_GGCCGGTAAC.fq XGUAE_71c.fq
+mv sample_AGGAACCTCG.fq XGUAE_43a.fq
+mv sample_TTATCCGTAG.fq XGUAE_43b.fq
+mv sample_CGCTATACGG.fq XGUAE_43c.fq
+mv sample_CACGCAACGA.fq XGUAE_42a.fq
+mv sample_TGTCCTAGGA.fq XGUAE_42b.fq
+mv sample_ATCCGTCTAC.fq XGUAE_42c.fq
+mv sample_GGACTCACGG.fq XGUAE_44a.fq
+mv sample_GCGTCCTGCC.fq XGUAE_44b.fq
+mv sample_ACTTGACCGG.fq XGUAE_44c.fq
+mv sample_AATGGTGACT.fq XGUAE_36a.fq
+mv sample_CTAACAGTAT.fq XGUAE_36b.fq
+mv sample_TCATAGGCTA.fq XGUAE_36c.fq
+mv sample_GCTGCACGGT.fq XG12_07a.fq
+mv sample_GCCGCAATGC.fq XG12_07b.fq
+mv sample_CGCTTCTCTG.fq XG12_07c.fq
+mv sample_CTCATTAACC.fq XG153a.fq
+mv sample_TTGATGGTGC.fq XG153b.fq
+mv sample_CAACATGAAG.fq XG153c.fq
+mv sample_ATGAAGGCAG.fq XG92a.fq
+mv sample_GATGGACTAA.fq XG92b.fq
+mv sample_GCATGGAGGT.fq XG92c.fq
+mv sample_GTATATCCAC.fq XGL713_177a.fq
+mv sample_CGTACCTTGC.fq XGL713_177b.fq
+mv sample_TATCGCGGAG.fq XGL713_177c.fq
+mv sample_CATGCATACT.fq XGL713_123a.fq
+mv sample_TCACTGAGAA.fq XGL713_123b.fq
+mv sample_ATCCATAAGA.fq XGL713_123c.fq
+mv sample_CTGTTAGATT.fq XGL713_123d.fq
+mv sample_TAACTGGTAC.fq XGL713_179a.fq
+mv sample_GCCGGTGATT.fq XGL713_179b.fq
+mv sample_AGACGAATAG.fq XGL713_179c.fq
+mv sample_GGTCATTGTA.fq XGL713_180a.fq
+mv sample_CGGTCGTTAC.fq XGL713_180b.fq
+mv sample_GACGGACAGG.fq XGL713_180c.fq
+mv sample_ATTGCCACCG.fq XGL713_180d.fq
+mv sample_CAGAACCAGC.fq XGL713_181a.fq
+mv sample_GCTGTGCAGA.fq XGL713_181b.fq
+mv sample_AAGACCAATC.fq XGL713_181c.fq
+mv sample_CGCGCGGCTG.fq XGUAE_124a.fq
+mv sample_GCATGAGGCG.fq XGUAE_124b.fq
+mv sample_TGACGGTGAT.fq XGUAE_124c.fq
+mv sample_CTTACCGGAG.fq XLJONK_14a.fq
+mv sample_ACACACATCA.fq XLJONK_14b.fq
+mv sample_TGTTGTCCGC.fq XLJONK_14c.fq
+mv sample_ATCCGCGACG.fq XLJONK_14d.fq
+mv sample_AAGTCGAGTA.fq BJE3639a.fq
+mv sample_CCAATCAAGA.fq BJE3639b.fq
+mv sample_TGAGCCAGCT.fq BJE3639c.fq
+mv sample_TCTAGAGAAG.fq BJE3545a.fq
+mv sample_GCCGAGGTGA.fq BJE3545b.fq
+mv sample_GGTGAGTCGG.fq BJE3545c.fq
+mv sample_CTTATTCTAC.fq XGL713_232a.fq
+mv sample_CAAGAGACGT.fq XGL713_232b.fq
+mv sample_GCACGTCTCC.fq XGL713_232c.fq
+mv sample_GTGCTCTCTA.fq XGL713_232d.fq
+mv sample_GCGTCAGATG.fq XM_1a.fq
+mv sample_AATGAATCAG.fq XM_1b.fq
+mv sample_ATTAGGAGGC.fq XM_1c.fq
+mv sample_TTCTTCAGAC.fq XM_1d.fq
 
+```
+concatenate the samples
+
+```
+cat XL_CPT1a.fq XL_CPT1b.fq XL_CPT1c.fq > XL_CPT1.fq 
+cat XL_CTP2a.fq XL_CPT2b.fq XL_CPT2c.fq > XL_CPT2.fq 
+cat XL_CPT3a.fq XL_CPT3b.fq XL_CPT3c.fq > XL_CPT3.fq
+cat XL_CPT4a.fq XL_CPT4b.fq XL_CPT4c.fq > XL_CPT4.fq
+cat XGUAE_59a.fq XGUAE_59b.fq XGUAE_59c.fq > XGUAE_59.fq
+cat XGUAE_65a.fq XGUAE_65b.fq XGUAE_65c.fq > XGUAE_65.fq
+cat XGUAE_97a.fq XGUAE_97b.fq XGUAE_97c.fq > XGUAE_97.fq
+cat XGUAE_93a.fq XGUAE_93b.fq XGUAE_93c.fq > XGUAE_93.fq
+cat XGUAE_92a.fq XGUAE_92b.fq XGUAE_92c.fq > XGUAE_92.fq  
+cat XGUAE_72a.fq XGUAE_72b.fq XGUAE_72c.fq > XGUAE_72.fq
+cat XGUAE_70a.fq XGUAE_70b.fq XGUAE_70c.fq > XGUAE_70.fq
+cat XGUAE_71a.fq XGUAE_71b.fq XGUAE_71c.fq > XGUAE_71.fq
+cat XGUAE_43a.fq XGUAE_43b.fq XGUAE_43c.fq > XGUAE_43.fq
+cat XGUAE_42a.fq XGUAE_42b.fq XGUAE_42c.fq > XGUAE_42.fq
+cat XGUAE_44a.fq XGUAE_44b.fq XGUAE_44c.fq > XGUAE_44.fq
+cat XGUAE_36a.fq XGUAE_36b.fq XGUAE_36c.fq > XGUAE_36.fq
+cat XG12_07a.fq XG12_07b.fq XG12_07c.fq > XG12_07.fq
+cat XG153a.fq XG153b.fq XG153c.fq > XG153.fq
+cat XG92a.fq XG92b.fq XG92c.fq > XG92.fq
+cat XGL713_177a.fq XGL713_177b.fq XGL713_177c.fq > XGL713_177.fq
+cat XGL713_123a.fq XGL713_123b.fq XGL713_123c.fq XGL713_123d.fq > XGL713_123.fq
+cat XGL713_179a.fq XGL713_179b.fq XGL713_179c.fq > XGL713_179.fq
+cat XGL713_180a.fq XGL713_180b.fq XGL713_180c.fq XGL713_180d.fq > XGL713_180.fq
+cat XGL713_181a.fq XGL713_181b.fq XGL713_181c.fq > XGL713_181.fq
+cat XGUAE_124a.fq XGUAE_124b.fq XGUAE_124c.fq > XGUAE_124.fq
+cat XLJONK_14a.fq XLJONK_14b.fq XLJONK_14c.fq XLJONK_14d.fq > XLJONK_14.fq
+cat BJE3639a.fq BJE3639b.fq BJE3639c.fq > BJE3639.fq
+cat BJE3545a.fq BJE3545b.fq BJE3545c.fq > BJE3545.fq
+cat XGL713_232a.fq XGL713_232b.fq XGL713_232c.fq XGL713_232d.fq > XGL713_232.fq
+cat XM_1a.fq XM_1b.fq XM_1c.fq XM_1d.fq > XM_1.fq
+```
 
