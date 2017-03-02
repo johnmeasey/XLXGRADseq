@@ -115,8 +115,10 @@ Unzip the genome
 
 and then index it 
 
-`bwa index -a bwtsw reference.fa`
+`bwa index -a bwtsw Xla.v91.repeatMasked.fa`
 
-`samtools faidx reference.fa`
+`samtools faidx Xla.v91.repeatMasked.fa`
 
+and now make a dict file:
 
+`~/jre1.8.0_111/bin/java -jar /usr/local/picard-tools-1.131/picard.jar CreateSequenceDictionary REFERENCE=Xla.v91.repeatMasked.fa OUTPUT=Xla.v91.repeatMasked.dict`
