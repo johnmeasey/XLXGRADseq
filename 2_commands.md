@@ -107,3 +107,16 @@ TTCTTCAGACTGCAGG	XM_1
 CGCACTTGATTGCAGG	FGXCONTROL
 ```
 
+# Preparing genome
+
+Unzip the genome
+
+`gunzip Xla.v91.repeatMasked.fa.gz`
+
+and then index it 
+
+`bwa index -a bwtsw reference.fa`
+
+`samtools faidx reference.fa`
+
+
