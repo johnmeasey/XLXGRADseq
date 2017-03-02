@@ -122,3 +122,104 @@ and then index it
 and now make a dict file:
 
 `~/jre1.8.0_111/bin/java -jar /usr/local/picard-tools-1.131/picard.jar CreateSequenceDictionary REFERENCE=Xla.v91.repeatMasked.fa OUTPUT=Xla.v91.repeatMasked.dict`
+
+# rename the demultiplexed files
+```
+mv sample_TCCGGAGCGC.fq XL_CPT1.fq
+mv sample_CTAACACGGC.fq XL_CPT1.fq
+mv sample_AGCTTCGATT.fq XL_CPT1.fq
+mv sample_TCGCCGCAAT.fq XL_CTP2.fq
+mv sample_TCAGTTCCGG.fq XL_CPT2.fq
+mv sample_CGGAAGTGAG.fq XL_CPT2.fq
+mv sample_GTTGCTAGAC.fq XL_CPT3.fq
+mv sample_AATAGATTCA.fq XL_CPT3.fq
+mv sample_AGCTGATACA.fq XL_CPT3.fq
+mv sample_ATCAGTAGAA.fq XL_CPT4.fq
+mv sample_TCGTCTTAGT.fq XL_CPT4.fq
+mv sample_GCTCAGCCAG.fq XL_CPT4.fq
+mv sample_CGGCTACTTC.fq XGUAE_59.fq
+mv sample_CAAGCCGGTT.fq XGUAE_59.fq
+mv sample_TTGCGCAAGC.fq XGUAE_59.fq
+mv sample_TACGATGGAG.fq XGUAE_65.fq
+mv sample_GCAATATACA.fq XGUAE_65.fq
+mv sample_AAGAATTCGG.fq XGUAE_65.fq
+mv sample_TCGGCAGTCG.fq XGUAE_97.fq
+mv sample_AGTTCCATTG.fq XGUAE_97.fq
+mv sample_TTCTTGCGCT.fq XGUAE_97.fq
+mv sample_AGCAATCTAA.fq XGUAE_93.fq
+mv sample_GAATTGTCGC.fq XGUAE_93.fq
+mv sample_CTTCGACATA.fq XGUAE_93.fq
+mv sample_GAGATATGGT.fq XGUAE_92.fq
+mv sample_CTCCTTGGAG.fq XGUAE_92.fq
+mv sample_GTGTCTCTTG.fq XGUAE_92.fq
+mv sample_TGCAGTTATC.fq XGUAE_72.fq
+mv sample_TTCTGGAATA.fq XGUAE_72.fq
+mv sample_ACGCAACACA.fq XGUAE_72.fq
+mv sample_ACTGCCTCAA.fq XGUAE_70.fq
+mv sample_ACATCAATAT.fq XGUAE_70.fq
+mv sample_CCTCTTATCA.fq XGUAE_70.fq
+mv sample_TATCGTTAGT.fq XGUAE_71.fq
+mv sample_TAGTGCGGTC.fq XGUAE_71.fq
+mv sample_GGCCGGTAAC.fq XGUAE_71.fq
+mv sample_AGGAACCTCG.fq XGUAE_43.fq
+mv sample_TTATCCGTAG.fq XGUAE_43.fq
+mv sample_CGCTATACGG.fq XGUAE_43.fq
+mv sample_CACGCAACGA.fq XGUAE_42.fq
+mv sample_TGTCCTAGGA.fq XGUAE_42.fq
+mv sample_ATCCGTCTAC.fq XGUAE_42.fq
+mv sample_GGACTCACGG.fq XGUAE_44.fq
+mv sample_GCGTCCTGCC.fq XGUAE_44.fq
+mv sample_ACTTGACCGG.fq XGUAE_44.fq
+mv sample_AATGGTGACT.fq XGUAE_36.fq
+mv sample_CTAACAGTAT.fq XGUAE_36.fq
+mv sample_TCATAGGCTA.fq XGUAE_36.fq
+mv sample_GCTGCACGGT.fq XG12_07.fq
+mv sample_GCCGCAATGC.fq XG12_07.fq
+mv sample_CGCTTCTCTG.fq XG12_07.fq
+mv sample_CTCATTAACC.fq XG153.fq
+mv sample_TTGATGGTGC.fq XG153.fq
+mv sample_CAACATGAAG.fq XG153.fq
+mv sample_ATGAAGGCAG.fq XG92.fq
+mv sample_GATGGACTAA.fq XG92.fq
+mv sample_GCATGGAGGT.fq XG92.fq
+mv sample_GTATATCCAC.fq XGL713_177.fq
+mv sample_CGTACCTTGC.fq XGL713_177.fq
+mv sample_TATCGCGGAG.fq XGL713_177.fq
+mv sample_CATGCATACT.fq XGL713_123.fq
+mv sample_TCACTGAGAA.fq XGL713_123.fq
+mv sample_ATCCATAAGA.fq XGL713_123.fq
+mv sample_CTGTTAGATT.fq XGL713_123.fq
+mv sample_TAACTGGTAC.fq XGL713_179.fq
+mv sample_GCCGGTGATT.fq XGL713_179.fq
+mv sample_AGACGAATAG.fq XGL713_179.fq
+mv sample_GGTCATTGTA.fq XGL713_180.fq
+mv sample_CGGTCGTTAC.fq XGL713_180.fq
+mv sample_GACGGACAGG.fq XGL713_180.fq
+mv sample_ATTGCCACCG.fq XGL713_180.fq
+mv sample_CAGAACCAGC.fq XGL713_181.fq
+mv sample_GCTGTGCAGA.fq XGL713_181.fq
+mv sample_AAGACCAATC.fq XGL713_181.fq
+mv sample_CGCGCGGCTG.fq XGUAE_124.fq
+mv sample_GCATGAGGCG.fq XGUAE_124.fq
+mv sample_TGACGGTGAT.fq XGUAE_124.fq
+mv sample_CTTACCGGAG.fq XLJONK_14.fq
+mv sample_ACACACATCA.fq XLJONK_14.fq
+mv sample_TGTTGTCCGC.fq XLJONK_14.fq
+mv sample_ATCCGCGACG.fq XLJONK_14.fq
+mv sample_AAGTCGAGTA.fq BJE3639.fq
+mv sample_CCAATCAAGA.fq BJE3639.fq
+mv sample_TGAGCCAGCT.fq BJE3639.fq
+mv sample_TCTAGAGAAG.fq BJE3545.fq
+mv sample_GCCGAGGTGA.fq BJE3545.fq
+mv sample_GGTGAGTCGG.fq BJE3545.fq
+mv sample_CTTATTCTAC.fq XGL713_232.fq
+mv sample_CAAGAGACGT.fq XGL713_232.fq
+mv sample_GCACGTCTCC.fq XGL713_232.fq
+mv sample_GTGCTCTCTA.fq XGL713_232.fq
+mv sample_GCGTCAGATG.fq XM_1.fq
+mv sample_AATGAATCAG.fq XM_1.fq
+mv sample_ATTAGGAGGC.fq XM_1.fq
+mv sample_TTCTTCAGAC.fq XM_1.fq
+```
+
+
