@@ -225,35 +225,35 @@ mv sample_TTCTTCAGAC.fq XM_1d.fq
 concatenate the samples
 
 ```
-cat XL_CPT1a.fq XL_CPT1b.fq XL_CPT1c.fq > XL_CPT1.fq 
-cat XL_CTP2a.fq XL_CPT2b.fq XL_CPT2c.fq > XL_CPT2.fq 
-cat XL_CPT3a.fq XL_CPT3b.fq XL_CPT3c.fq > XL_CPT3.fq
-cat XL_CPT4a.fq XL_CPT4b.fq XL_CPT4c.fq > XL_CPT4.fq
-cat XGUAE_59a.fq XGUAE_59b.fq XGUAE_59c.fq > XGUAE_59.fq
-cat XGUAE_65a.fq XGUAE_65b.fq XGUAE_65c.fq > XGUAE_65.fq
-cat XGUAE_97a.fq XGUAE_97b.fq XGUAE_97c.fq > XGUAE_97.fq
-cat XGUAE_93a.fq XGUAE_93b.fq XGUAE_93c.fq > XGUAE_93.fq
-cat XGUAE_92a.fq XGUAE_92b.fq XGUAE_92c.fq > XGUAE_92.fq  
-cat XGUAE_72a.fq XGUAE_72b.fq XGUAE_72c.fq > XGUAE_72.fq
-cat XGUAE_70a.fq XGUAE_70b.fq XGUAE_70c.fq > XGUAE_70.fq
-cat XGUAE_71a.fq XGUAE_71b.fq XGUAE_71c.fq > XGUAE_71.fq
-cat XGUAE_43a.fq XGUAE_43b.fq XGUAE_43c.fq > XGUAE_43.fq
-cat XGUAE_42a.fq XGUAE_42b.fq XGUAE_42c.fq > XGUAE_42.fq
-cat XGUAE_44a.fq XGUAE_44b.fq XGUAE_44c.fq > XGUAE_44.fq
-cat XGUAE_36a.fq XGUAE_36b.fq XGUAE_36c.fq > XGUAE_36.fq
-cat XG12_07a.fq XG12_07b.fq XG12_07c.fq > XG12_07.fq
-cat XG153a.fq XG153b.fq XG153c.fq > XG153.fq
-cat XG92a.fq XG92b.fq XG92c.fq > XG92.fq
-cat XGL713_177a.fq XGL713_177b.fq XGL713_177c.fq > XGL713_177.fq
-cat XGL713_123a.fq XGL713_123b.fq XGL713_123c.fq XGL713_123d.fq > XGL713_123.fq
-cat XGL713_179a.fq XGL713_179b.fq XGL713_179c.fq > XGL713_179.fq
-cat XGL713_180a.fq XGL713_180b.fq XGL713_180c.fq XGL713_180d.fq > XGL713_180.fq
-cat XGL713_181a.fq XGL713_181b.fq XGL713_181c.fq > XGL713_181.fq
-cat XGUAE_124a.fq XGUAE_124b.fq XGUAE_124c.fq > XGUAE_124.fq
-cat XLJONK_14a.fq XLJONK_14b.fq XLJONK_14c.fq XLJONK_14d.fq > XLJONK_14.fq
-cat BJE3639a.fq BJE3639b.fq BJE3639c.fq > BJE3639.fq
-cat BJE3545a.fq BJE3545b.fq BJE3545c.fq > BJE3545.fq
-cat XGL713_232a.fq XGL713_232b.fq XGL713_232c.fq XGL713_232d.fq > XGL713_232.fq
-cat XM_1a.fq XM_1b.fq XM_1c.fq XM_1d.fq > XM_1.fq
+cat XL_CPT1a.fq XL_CPT1b.fq XL_CPT1c.fq > concat/XL_CPT1.fq 
+cat XL_CTP2a.fq XL_CPT2b.fq XL_CPT2c.fq > concat/XL_CPT2.fq 
+cat XL_CPT3a.fq XL_CPT3b.fq XL_CPT3c.fq > concat/XL_CPT3.fq
+cat XL_CPT4a.fq XL_CPT4b.fq XL_CPT4c.fq > concat/XL_CPT4.fq
+cat XGUAE_59a.fq XGUAE_59b.fq XGUAE_59c.fq > concat/XGUAE_59.fq
+cat XGUAE_65a.fq XGUAE_65b.fq XGUAE_65c.fq > concat/XGUAE_65.fq
+cat XGUAE_97a.fq XGUAE_97b.fq XGUAE_97c.fq > concat/XGUAE_97.fq
+cat XGUAE_93a.fq XGUAE_93b.fq XGUAE_93c.fq > concat/XGUAE_93.fq
+cat XGUAE_92a.fq XGUAE_92b.fq XGUAE_92c.fq > concat/XGUAE_92.fq  
+cat XGUAE_72a.fq XGUAE_72b.fq XGUAE_72c.fq > concat/XGUAE_72.fq
+cat XGUAE_70a.fq XGUAE_70b.fq XGUAE_70c.fq > concat/XGUAE_70.fq
+cat XGUAE_71a.fq XGUAE_71b.fq XGUAE_71c.fq > concat/XGUAE_71.fq
+cat XGUAE_43a.fq XGUAE_43b.fq XGUAE_43c.fq > concat/XGUAE_43.fq
+cat XGUAE_42a.fq XGUAE_42b.fq XGUAE_42c.fq > concat/XGUAE_42.fq
+cat XGUAE_44a.fq XGUAE_44b.fq XGUAE_44c.fq > concat/XGUAE_44.fq
+cat XGUAE_36a.fq XGUAE_36b.fq XGUAE_36c.fq > concat/XGUAE_36.fq
+cat XG12_07a.fq XG12_07b.fq XG12_07c.fq > concat/XG12_07.fq
+cat XG153a.fq XG153b.fq XG153c.fq > concat/XG153.fq
+cat XG92a.fq XG92b.fq XG92c.fq > concat/XG92.fq
+cat XGL713_177a.fq XGL713_177b.fq XGL713_177c.fq > concat/XGL713_177.fq
+cat XGL713_123a.fq XGL713_123b.fq XGL713_123c.fq XGL713_123d.fq > concat/XGL713_123.fq
+cat XGL713_179a.fq XGL713_179b.fq XGL713_179c.fq > concat/XGL713_179.fq
+cat XGL713_180a.fq XGL713_180b.fq XGL713_180c.fq XGL713_180d.fq > concat/XGL713_180.fq
+cat XGL713_181a.fq XGL713_181b.fq XGL713_181c.fq > concat/XGL713_181.fq
+cat XGUAE_124a.fq XGUAE_124b.fq XGUAE_124c.fq > concat/XGUAE_124.fq
+cat XLJONK_14a.fq XLJONK_14b.fq XLJONK_14c.fq XLJONK_14d.fq > concat/XLJONK_14.fq
+cat BJE3639a.fq BJE3639b.fq BJE3639c.fq > concat/BJE3639.fq
+cat BJE3545a.fq BJE3545b.fq BJE3545c.fq > concat/BJE3545.fq
+cat XGL713_232a.fq XGL713_232b.fq XGL713_232c.fq XGL713_232d.fq > concat/XGL713_232.fq
+cat XM_1a.fq XM_1b.fq XM_1c.fq XM_1d.fq > concat/XM_1.fq
 ```
 
