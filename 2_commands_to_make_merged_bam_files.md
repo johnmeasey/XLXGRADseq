@@ -318,7 +318,12 @@ done
 
 # Make a merged bam file
 
-`samtools merge XLXVXGXM_merged_sorted.bam *_sorted.bam`
+`samtools merge XLXVXGXM_merged_sorted.bam *_sorted.bam` (see problems next!)
+
+This did not really work for some reason.  The merged file had only one sample in it.  So we tried picard instead:
+
+`~/jre1.8.0_111/bin/java -jar /usr/local/picard-tools-1.131/picard.jar MergeSamFiles I=BJE1488_sorted.bam I=BJE1489_sorted.bam I=BJE261_sorted.bam I=BJE263_sorted.bam I=BJE264_sorted.bam I=BJE265_sorted.bam I=BJE266_sorted.bam I=BJE267_sorted.bam I=BJE3545_sorted.bam I=BJE3639_sorted.bam I=XG12_07_sorted.bam I=XG153_sorted.bam I=XG92_sorted.bam I=XGL713_123_sorted.bam I=XGL713_177_sorted.bam I=XGL713_179_sorted.bam I=XGL713_180_sorted.bam I=XGL713_181_sorted.bam I=XGL713_232_sorted.bam I=XGUAE_124_sorted.bam I=XGUAE_36_sorted.bam I=XGUAE_42_sorted.bam I=XGUAE_43_sorted.bam I=XGUAE_44_sorted.bam I=XGUAE_59_sorted.bam I=XGUAE_65_sorted.bam I=XGUAE_70_sorted.bam I=XGUAE_71_sorted.bam I=XGUAE_72_sorted.bam I=XGUAE_92_sorted.bam I=XGUAE_93_sorted.bam I=XGUAE_97_sorted.bam I=XL_CPT1_sorted.bam I=XL_CPT2_sorted.bam I=XL_CPT3_sorted.bam I=XL_CPT4_sorted.bam I=XLJONK_14_sorted.bam I=XM_1_sorted.bam O=XLXVXGXM_merged_sorted.bam `
+
 
 # index the bam file
 
