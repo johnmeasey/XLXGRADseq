@@ -333,3 +333,9 @@ In parallel we also are just genotyping the individual bam files all as input an
 `samtools index XLXVXGXM_merged_sorted.bam`
 
 `~/samtools_2016/bin/samtools mpileup -d8000 -ugf /net/infofile4-inside/volume1/scratch/ben/2017_XL_XG_RADseq/XL_v9.1/Xla.v91.repeatMasked.fa -t DP,AD XLXVXGXM_merged_sorted.bam | ~/samtools_2016/bcftools-1.3.1/bcftools call -V indels --format-fields GQ -m -O z | ~/samtools_2016/bcftools-1.3.1/bcftools filter -e 'FORMAT/GT = "." || FORMAT/DP < 10 || FORMAT/GQ < 20 || FORMAT/GQ = "."' -O z -o XLXVXGXM_merged_sorted.bam.vcf.gz`
+
+That filtered all sites with any missing genotype so instead I did this:
+
+`~/samtools_2016/bin/samtools mpileup -d8000 -ugf /net/infofile4-inside/volume1/scratch/ben/2017_XL_XG_RADseq/XL_v9.1/Xla.v91.repeatMasked.fa -t DP,AD BJE1488_sorted.bam  BJE1489_sorted.bam  BJE261_sorted.bam  BJE263_sorted.bam  BJE264_sorted.bam  BJE265_sorted.bam  BJE266_sorted.bam  BJE267_sorted.bam  BJE3545_sorted.bam  BJE3639_sorted.bam  XG12_07_sorted.bam  XG153_sorted.bam  XG92_sorted.bam  XGL713_123_sorted.bam  XGL713_177_sorted.bam  XGL713_179_sorted.bam  XGL713_180_sorted.bam  XGL713_181_sorted.bam  XGL713_232_sorted.bam  XGUAE_124_sorted.bam  XGUAE_36_sorted.bam  XGUAE_42_sorted.bam  XGUAE_43_sorted.bam  XGUAE_44_sorted.bam  XGUAE_59_sorted.bam  XGUAE_65_sorted.bam  XGUAE_70_sorted.bam  XGUAE_71_sorted.bam  XGUAE_72_sorted.bam  XGUAE_92_sorted.bam  XGUAE_93_sorted.bam  XGUAE_97_sorted.bam  XL_CPT1_sorted.bam  XL_CPT2_sorted.bam  XL_CPT3_sorted.bam  XL_CPT4_sorted.bam  XLJONK_14_sorted.bam  XM_1_sorted.bam | ~/samtools_2016/bcftools-1.3.1/bcftools call -V indels --format-fields GQ -m -O z -O z -o XLXVXGXM_merged_sorted.bam.vcf.gz`
+
+
