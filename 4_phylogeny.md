@@ -160,7 +160,7 @@ $status = system("perl -p -i -e 's/XXXX/$count/g' $outputfile");
 `~/2015_SulaRADtag/good_merged_samples/iqtree-1.5.0a-Linux/bin/iqtree -s XLXVXGXM_merged_sorted.bam.vcf.gz.phy -m TEST -nt 1 -pre XLXVXGXM_merged_sorted.bam.vcf.gz.phy_`
 
 # Ultrafast bootstrap
-`iqtree -s XLXVXGXM_merged_sorted.bam.vcf.gz.phy -m TEST -bb 1000`
+`~/2015_SulaRADtag/good_merged_samples/iqtree-1.5.0a-Linux/bin/iqtree -s XLXVXGXM_merged_sorted.bam.vcf.gz.phy -m TEST -bb 1000`
 
 
 
