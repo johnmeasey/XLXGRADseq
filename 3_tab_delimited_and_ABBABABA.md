@@ -825,6 +825,15 @@ close OUTFILE2;
 # Cape vs other SA
 # perl Performs_ABBA_BABA_on_populations_diploid_outgroup.pl XLXVXGXM_merged_sorted.bam.vcf.gz.tab 11111111111111111111111111111111111111 41_4_11-12-13-14-15-16-17-18-20-21-22-23-24_25-26-27-28-29-30-31-32-33-34-35-36_9-10-19 Omuel_H3_allgilli_H1_Capelaev_H2_SAlaev.jk Omuel_H3_allgilli_H1_Capelaev_H2_SAlaev.stats
 
+# Capelaev_H2_yellowgreen
+Performs_ABBA_BABA_on_populations_diploid_outgroup.pl XLXVXGXM_merged_sorted.bam.vcf.gz.tab 11111111111111111111111111111111111111 41_4_11-12-13-14-15-16-17-18-20-21-22-23-24_25-26-27-28-29-30-31-32-33-34-35-36_10-19 Omuel_H3_allgilli_H1_Capelaev_H2_yellowgreenv.jk Omuel_H3_allgilli_H1_Capelaev_H2_yellowgreen.stats
+
+
+# Capelaevjonk_H2_yellowgreen
+Performs_ABBA_BABA_on_populations_diploid_outgroup.pl XLXVXGXM_merged_sorted.bam.vcf.gz.tab 11111111111111111111111111111111111111 41_4_11-12-13-14-15-16-17-18-20-21-22-23-24_25-26-27-28-29-30-31-32-33-34-35-36-37_10-19 Omuel_H3_allgilli_H1_Capelaevjonk_H2_yellowgreenv.jk Omuel_H3_allgilli_H1_Capelaevjonk_H2_yellowgreen.stats
+
+# Capelaevjonkniew_H2_yellowgreen
+Performs_ABBA_BABA_on_populations_diploid_outgroup.pl XLXVXGXM_merged_sorted.bam.vcf.gz.tab 11111111111111111111111111111111111111 41_4_11-12-13-14-15-16-17-18-20-21-22-23-24_9-25-26-27-28-29-30-31-32-33-34-35-36-37_10-19 Omuel_H3_allgilli_H1_Capelaevjonkniew_H2_yellowgreenv.jk Omuel_H3_allgilli_H1_Capelaevjonkniew_H2_yellowgreen.stats
 
 
 
