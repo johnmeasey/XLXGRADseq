@@ -792,17 +792,17 @@ close OUTFILE2;
 
 Here are some command lines:
 H2 vict
-perl Performs_ABBA_BABA_on_populations_diploid_outgroup.pl XLXVXGXM_merged_sorted.bam.vcf.gz.tab 11111111111111111111111111111111111111 41_4_11-12-13-14-15-16-17-18-21-22-23-24_20-25-26-27-28-29-30-31-32-33-34-35-36_1-2-3-4-5-6-7-8 O_muel_H3_allgilli_H1_Capelaev_H2_vict.jk O_muel_H3_allgilli_H1_Capelaev_H2_vict.stats
+perl Performs_ABBA_BABA_on_populations_diploid_outgroup.pl XLXVXGXM_merged_sorted.bam.vcf.gz.tab 11111111111111111111111111111111111111 41_4_11-12-13-14-15-16-17-18-21-22-23-24_20-25-26-27-28-29-30-31-32-34-35-36-37_1-2-3-4-5-6-7-8 O_muel_H3_allgilli_H1_Capelaev_H2_vict.jk O_muel_H3_allgilli_H1_Capelaev_H2_vict.stats
 
 H2 not including Jonk
-perl Performs_ABBA_BABA_on_populations_diploid_outgroup.pl XLXVXGXM_merged_sorted.bam.vcf.gz.tab 11111111111111111111111111111111111111 41_4_11-12-13-14-15-16-17-18-21-22-23-24_20-25-26-27-28-29-30-31-32-33-34-35-36_9-10-19 Omuel_H3_allgilli_H1_Capelaev_H2_SAlaev.jk Omuel_H3_allgilli_H1_Capelaev_H2_SAlaev.stats
+perl Performs_ABBA_BABA_on_populations_diploid_outgroup.pl XLXVXGXM_merged_sorted.bam.vcf.gz.tab 11111111111111111111111111111111111111 41_4_11-12-13-14-15-16-17-18-21-22-23-24_20-25-26-27-28-29-30-31-32-34-35-36-37_9-10-19 Omuel_H3_allgilli_H1_Capelaev_H2_SAlaev.jk Omuel_H3_allgilli_H1_Capelaev_H2_SAlaev.stats
 
 
 H2 including Jonk
-perl Performs_ABBA_BABA_on_populations_diploid_outgroup.pl XLXVXGXM_merged_sorted.bam.vcf.gz.tab 11111111111111111111111111111111111111 41_4_11-12-13-14-15-16-17-18-21-22-23-24_20-25-26-27-28-29-30-31-32-33-34-35-36_9-10-19-37 Omuel_H3_allgilli_H1_Capelaev_H2_SAlaevJonk.jk Omuel_H3_allgilli_H1_Capelaev_H2_SAlaevJonk.stats
+perl Performs_ABBA_BABA_on_populations_diploid_outgroup.pl XLXVXGXM_merged_sorted.bam.vcf.gz.tab 11111111111111111111111111111111111111 41_4_11-12-13-14-15-16-17-18-21-22-23-24_20-25-26-27-28-29-30-31-32-34-35-36-37_9-10-19-33 Omuel_H3_allgilli_H1_Capelaev_H2_SAlaevJonk.jk Omuel_H3_allgilli_H1_Capelaev_H2_SAlaevJonk.stats
 
 H3 CoGHgilli, H1 CoGHlaev, H2 not including Jonk
-perl Performs_ABBA_BABA_on_populations_diploid_outgroup.pl XLXVXGXM_merged_sorted.bam.vcf.gz.tab 11111111111111111111111111111111111111 41_4_11-12-13-21-22-23-24_25-26-33-34-35-36_9-10-19 Omuel_H3_CoGHgilli_H1_CoGHlaev_H2_SAlaev.jk Omuel_H3_CoGHgilli_H1_CoGHlaev_H2_SAlaev.stats
+perl Performs_ABBA_BABA_on_populations_diploid_outgroup.pl XLXVXGXM_merged_sorted.bam.vcf.gz.tab 11111111111111111111111111111111111111 41_4_11-12-13-21-22-23-24_25-26-34-35-36-37_9-10-19 Omuel_H3_CoGHgilli_H1_CoGHlaev_H2_SAlaev.jk Omuel_H3_CoGHgilli_H1_CoGHlaev_H2_SAlaev.stats
 
 H3 Kleingilli, H1 Kleinlaev, H2 not including Jonk
 perl Performs_ABBA_BABA_on_populations_diploid_outgroup.pl XLXVXGXM_merged_sorted.bam.vcf.gz.tab 11111111111111111111111111111111111111 41_4_14-15-16-17-18_20-27-28-29-30-31-32_9-10-19 Omuel_H3_Kleingilli_H1_Kleinlaev_H2_SAlaev.jk Omuel_H3_Kleingilli_H1_Kleinlaev_H2_SAlaev.stats
