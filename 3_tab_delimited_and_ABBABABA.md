@@ -76,11 +76,11 @@ use List::MoreUtils qw/ uniq /;
 #	30	XGUAE_92_sorted.bam		laevis	kleinmond
 #	31	XGUAE_93_sorted.bam		laevis	kleinmond
 #	32	XGUAE_97_sorted.bam		laevis	kleinmond
-#	33	XL_CPT1_sorted.bam		laevis	CoGH
-#	34	XL_CPT2_sorted.bam		laevis	CoGH
-#	35	XL_CPT3_sorted.bam		laevis	CoGH
-#	36	XL_CPT4_sorted.bam		laevis	CoGH
-#	37	XLJONK_14_sorted.bam		laevis	Blue clade
+#	33	XLJONK_14_sorted.bam		laevis	Blue clade
+#	34	XL_CPT1_sorted.bam		laevis	CoGH
+#	35	XL_CPT2_sorted.bam		laevis	CoGH
+#	36	XL_CPT3_sorted.bam		laevis	CoGH
+#	37	XL_CPT4_sorted.bam		laevis	CoGH
 #	38	XM_1_sorted.bam		muel	
 
 
