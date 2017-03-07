@@ -804,9 +804,11 @@ H2 including Jonk
 perl Performs_ABBA_BABA_on_populations_diploid_outgroup.pl XLXVXGXM_merged_sorted.bam.vcf.gz.tab 11111111111111111111111111111111111111 41_4_11-12-13-14-15-16-17-18-21-22-23-24_9-10-19-33_20-25-26-27-28-29-30-31-32-34-35-36-37 Omuel_H3_allgilli_H1_SAlaevJonk_H2_Capelaev.jk Omuel_H3_allgilli_H1_SAlaevJonk_H2_Capelaev.stats
 
 H3 CoGHgilli, H1 CoGHlaev, H2 not including Jonk
+
 perl Performs_ABBA_BABA_on_populations_diploid_outgroup.pl XLXVXGXM_merged_sorted.bam.vcf.gz.tab 11111111111111111111111111111111111111 41_4_11-12-13-21-22-23-24_9-10-19_25-26-34-35-36-37 Omuel_H3_CoGHgilli_H1_SAlaev_H2_CoGHlaev.jk Omuel_H3_CoGHgilli_H1_SAlaev_H2_CoGHlaev.stats
 
 H3 Kleingilli, H1 Kleinlaev, H2 not including Jonk
+
 perl Performs_ABBA_BABA_on_populations_diploid_outgroup.pl XLXVXGXM_merged_sorted.bam.vcf.gz.tab 11111111111111111111111111111111111111 41_4_14-15-16-17-18_9-10-19_20-27-28-29-30-31-32 Omuel_H3_Kleingilli_H1_SAlaev_H2_Kleinlaev.jk Omuel_H3_Kleingilli_H1_SAlaev_H2_Kleinlaev.stats
 
 # Plot the results with R
