@@ -73,3 +73,10 @@ d
 dev.off()
 
 ```
+
+# Exclude XM to see what PCA looks like with only XL, XV, and XG
+
+```
+~/jre1.8.0_111/bin/java -Xmx2g -jar /home/ben/GenomeAnalysisTK-3.6/GenomeAnalysisTK.jar -T SelectVariants -R ../../XL_v9.1/Xla.v91.repeatMasked.fa --exclude_sample_file XM_sample -o XLXVXG_merged_sorted.bam.vcf.gz --variant XLXVXGXM_merged_sorted.bam.vcf.gz 
+```
+
