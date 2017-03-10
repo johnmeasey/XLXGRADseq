@@ -811,6 +811,16 @@ H3 Kleingilli, H1 Kleinlaev, H2 not including Jonk
 
 perl Performs_ABBA_BABA_on_populations_diploid_outgroup.pl XLXVXGXM_merged_sorted.bam.vcf.gz.tab 11111111111111111111111111111111111111 41_4_14-15-16-17-18_9-10-19_20-27-28-29-30-31-32 Omuel_H3_Kleingilli_H1_SAlaev_H2_Kleinlaev.jk Omuel_H3_Kleingilli_H1_SAlaev_H2_Kleinlaev.stats
 
+H1 SAlaev H2 only Jonk 
+
+perl Performs_ABBA_BABA_on_populations_diploid_outgroup.pl XLXVXGXM_merged_sorted.bam.vcf.gz.tab 11111111111111111111111111111111111111 41_4_11-12-13-14-15-16-17-18-21-22-23-24_9-10-19_33 Omuel_H3_allgilli_H1_SAlaev_H2onlyJonk.jk Omuel_H3_allgilli_H1_SAlaev_H2onlyJonk.stats
+
+
+H1 vict H2 only Jonk 
+
+perl Performs_ABBA_BABA_on_populations_diploid_outgroup.pl XLXVXGXM_merged_sorted.bam.vcf.gz.tab 11111111111111111111111111111111111111 41_4_11-12-13-14-15-16-17-18-21-22-23-24_1-2-3-4-5-6-7-8_33 Omuel_H3_allgilli_H1_vict_H2onlyJonk.jk Omuel_H3_allgilli_H1_vict_H2onlyJonk.stats
+
+
 # Plot the results with R
 
 Script: fdm_plot_aDNA_vs_xDNA.R
