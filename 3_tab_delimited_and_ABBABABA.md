@@ -820,6 +820,11 @@ H1 vict H2 only Jonk
 
 perl Performs_ABBA_BABA_on_populations_diploid_outgroup.pl XLXVXGXM_merged_sorted.bam.vcf.gz.tab 11111111111111111111111111111111111111 41_4_11-12-13-14-15-16-17-18-21-22-23-24_1-2-3-4-5-6-7-8_33 Omuel_H3_allgilli_H1_vict_H2onlyJonk.jk Omuel_H3_allgilli_H1_vict_H2onlyJonk.stats
 
+No gilli H3 vict H1 Cape H2 Kim
+
+perl Performs_ABBA_BABA_on_populations_diploid_outgroup.pl XLXVXGXM_merged_sorted.bam.vcf.gz.tab 11111111111111111111111111111111111111 41_4_1-2-3-4-5-6-7-8_20-25-26-27-28-29-30-31-32-33-34-35-36-37_9-10-19 Omuel_H3_vict_H1_Cape_H2_Kim.jk Omuel_H3_vict_H1_Cape_H2_Kim.stats
+
+
 
 # Plot the results with R
 
