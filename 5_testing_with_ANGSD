@@ -14,3 +14,17 @@ That didn't seem to work so I tried this:
 
 `./angsd -doAbbababa 1 -bam bam.filelist -doCounts 1 -out bam.Angsd -useLast 1`
 
+and then this:
+`Rscript R/jackKnife.R file=bam.Angsd.abbababa indNames=bam.filelist_3 outfile=XLXGXMXV_subset_out_abbababa_out`
+
+and I got this:
+
+```
+H1	H2	H3	nABBA	nBABA	Dstat	jackEst	SE	Z	
+BJE3545_sorted.bam	XGUAE_43_sorted.bam	XL_CPT1_sorted.bam	946	11165	-0.8437784	-0.8437784	0.00656269	-128.572	
+XL_CPT1_sorted.bam	XGUAE_43_sorted.bam	BJE3545_sorted.bam	1165	11165	-0.81103	-0.81103	0.006481028	-125.1391	
+XL_CPT1_sorted.bam	BJE3545_sorted.bam	XGUAE_43_sorted.bam	1165	946	0.1037423	0.1037423	0.02378104	4.362396	
+
+```
+
+Last line is consistent with my script.
