@@ -4,4 +4,13 @@ First make a fastafile from the XM seq like this from within `/net/infofile4-ins
 
 `./angsd -i ../../XM_1_sorted.bam -doFasta 1 -doCounts 1 -out XM_1_sorted.bam.fa`
 
+Turns out that the commands for reading a fasta file as an outgroup are not yet implemented.  Instead I typed this command:
+
+`./angsd -doAbbababa2 1 -bam bam.filelist -doCounts 1 -out bam.Angsd -minQ 20 -minMapQ 30 -p 1`
+
+The bam.filelist lists the XM file last, so hopefully that will be the outgroup.
+
+That didn't seem to work so I tried this:
+
+`./angsd -doAbbababa 1 -bam bam.filelist -doCounts 1 -out bam.Angsd -useLast 1`
 
