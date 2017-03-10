@@ -1,0 +1,7 @@
+# Angsd 
+
+First make a fastafile from the XM seq like this from within `/net/infofile4-inside/volume1/scratch/ben/2017_XL_XG_RADseq/samples/concat/angsd0.916/angsd`:
+
+`./angsd -i ../../XM_1_sorted.bam -doFasta 1 -doCounts 1 -out XM_1_sorted.bam.fa`
+
+
