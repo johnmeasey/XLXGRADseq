@@ -28,3 +28,9 @@ XL_CPT1_sorted.bam	BJE3545_sorted.bam	XGUAE_43_sorted.bam	1165	946	0.1037423	0.1
 ```
 
 Last line is consistent with my script.
+
+
+This also worked:
+
+`./angsd -doAbbababa2 1 -bam bam.filelist2 -doCounts 1 -out bam.Angsd -ans XM_1_sorted.bam.fa.gz`
+`Rscript R/estAvgError.R angsdFile=bam.Angsd out="result" `
