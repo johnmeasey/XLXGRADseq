@@ -32,5 +32,5 @@ Last line is consistent with my script.
 
 This also worked:
 
-`./angsd -doAbbababa2 1 -bam bam.filelist2 -doCounts 1 -out bam.Angsd -ans XM_1_sorted.bam.fa.gz`
+`./angsd -doAbbababa2 1 -bam bam.filelist2 -doCounts 1 -out bam.Angsd`
 `Rscript R/estAvgError.R angsdFile=bam.Angsd out="result" `
