@@ -1,0 +1,59 @@
+setwd("F:/John/Amphibians/Frogs/Pipidae/NRF_Darwin/Ben_Evans") #or wherever you have both vcf.gz and idx files.
+#after having installed PopGenome
+library(PopGenome)
+
+#OK - so this took quite a time, first I had to devise a way of printing all of the columns to work out how to call "tid" 
+
+v <- .Call("VCF_open", "XLXVXGXM_merged_sorted.bam.vcf.gz")
+if( is.null( v ) )
+{
+  # setwd(curdir)
+  return(FALSE);
+}  
+alltids = .Call("VCF_getContigNames",v)
+print("Available ContigIdentifiers (parameter tid):")
+print(alltids)
+if( ! (tid %in% alltids) )
+{
+  stop("Parameter <tid> invalid : not a chromosome/contig Identifier found in the VCF file!")
+}
+}
+options(max.print=1000000)
+print(alltids)
+
+
+GENOME.class <- readVCF("XLXVXGXM_merged_sorted.bam.vcf.gz", 1000, "chr1L", 1, 10000000, approx=TRUE)
+GENOME.class
+GENOME.class@region.names
+
+
+#define populations
+
+XV <-  c("BJE1488_sorted.bam","BJE1489_sorted.bam","BJE261_sorted.bam","BJE263_sorted.bam","BJE264_sorted.bam","BJE265_sorted.bam","BJE266_sorted.bam","BJE267_sorted.bam")
+XGCP <-  c("XG12_07_sorted.bam","XG153_sorted.bam","XG92_sorted.bam","XGUAE_36_sorted.bam","XGUAE_42_sorted.bam","XGUAE_43_sorted.bam","XGUAE_44_sorted.bam")
+XLCP <- c("XGUAE_59_sorted.bam","XGUAE_65_sorted.bam","XL_CPT1_sorted.bam","XL_CPT2_sorted.bam","XL_CPT3_sorted.bam","XL_CPT4_sorted.bam")
+XGKL <- c("XGL713_123_sorted.bam","XGL713_177_sorted.bam","XGL713_179_sorted.bam","XGL713_180_sorted.bam","XGL713_181_sorted.bam")
+XLKL <- c("XGUAE_124_sorted.bam","XGUAE_70_sorted.bam","XGUAE_71_sorted.bam","XGUAE_72_sorted.bam","XGUAE_92_sorted.bam","XGUAE_93_sorted.bam","XGUAE_97_sorted.bam")
+XLP <- c("BJE3545_sorted.bam")
+XLG <- c("BJE3639_sorted.bam")
+XLPE <- c("XGL713_232_sorted.bam")
+XLB <- c("XLJONK_14_sorted.bam")
+XM <- c("XM_1_sorted.bam")
+
+GENOME.class <- set.populations(GENOME.class,list(XV,XGCP,XLCP,XGKL,XLKL), diploid=TRUE)
+GENOME.class <- set.outgroup(GENOME.class,c(XM), diploid =TRUE)
+
+# split the data in 10kb consecutive windows
+slide <- sliding.window.transform(GENOME.class,10000,10000, type=2)
+# total number of windows
+length(slide@region.names)
+# Statistics
+slide <- diversity.stats(slide)
+nucdiv <- slide@nuc.diversity.within
+# the values have to be normalized by the number of nucleotides in each window
+nucdiv <- nucdiv/5000
+head(nucdiv)
+summary(nucdiv)
+#notably less diversity in XV and XLCP. Might be expected as XLCP were more likely to be related to each other.
+
+
